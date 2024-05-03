@@ -1,0 +1,274 @@
+body 
+{
+  background-color: #FAF0E6; 
+}
+.navbar-custom 
+{
+  background-color: #f8f9fa; 
+}
+
+.navbar-custom .nav-link 
+{
+  color: #495057; 
+  font-size: 18px;
+  margin-right: 20px; 
+}
+
+.navbar-custom .nav-link:hover 
+{
+  color: #28a745; 
+}
+
+.navbar-custom .btn-join-us 
+{
+  background-color: #28a745; 
+  color: #fff; 
+  font-weight: bold; 
+}
+
+.navbar-custom .btn-join-us:hover 
+{
+  background-color: #218838; 
+}
+
+.carousel-item img 
+{
+  width: 920px;
+  height: 920px;
+  object-fit: cover; 
+}
+
+.dropdown-item:focus 
+{
+  background-color: #28a745; 
+  color: #fff; 
+}
+
+.carousel-caption 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white; 
+  padding: 20px;
+}
+
+.btn-read-more 
+{
+  background-color: #28a745 !important; 
+  color: #fff; 
+  border: none;
+}
+
+.btn-read-more:hover 
+{
+  background-color: #218838 !important; 
+}
+
+.custom-img 
+{
+  max-width: 100%;
+  max-height: 400px; 
+  height: auto;
+  border-radius: 2%;
+}
+
+.custom-video 
+{
+  max-width: 100%;
+  max-height: 400px; 
+  height: auto;
+  border-radius: 2%;
+}
+
+.profile-img 
+{
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* FOOTER CSS */
+.footer-links a 
+{
+  text-decoration: none; 
+  color: inherit;
+}
+
+.social-icon 
+{
+  margin-right: 25px;
+}
+
+.footer-socials h5
+{
+  margin-right: 90px;
+}
+
+.clickable-h5 
+{
+  cursor: pointer;
+}
+
+/* END OF FOOTER CSS */
+
+.background-container 
+{
+  background-image: url('./assets/images/branch23.png'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 600px;
+}
+
+.background-container2 
+{
+  background-image: url('./assets/images/branch24.png'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 600px; 
+}
+
+.left-section 
+{
+  background-color: green;
+}
+
+.right-section 
+{
+  background-color: blue;
+}
+
+.background-color
+{
+  background-color: #FAF0E6;
+}
+
+.content-color
+{
+  background-color: #FAF0E6;
+}
+
+.highlightedText
+{
+  color: #28a745;
+}
+
+.highlightedText2
+{
+  color: #FF0000;
+}
+
+/* FADE IN WHEN LOADING */
+@keyframes fadeIn 
+{
+  from 
+  {
+    opacity: 0;
+  }
+  to 
+  {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut 
+{
+  from 
+  {
+    opacity: 1;
+  }
+  to 
+  {
+    opacity: 0;
+  }
+}
+
+.navbar-custom 
+{
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  transition: opacity 0.5s;
+}
+
+.navbar-custom.fade-out 
+{
+  animation: fadeOut 0.5s forwards;
+}
+
+body 
+{
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+body.loaded 
+{
+  opacity: 1;
+}
+/* END OF FADE IN WHEN LOADING */
+
+
+#btn-back-to-top 
+{
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  display: none;
+  border-radius:50% ;
+}
+
+/* RATING CSS */
+.rating 
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.rating input[type="radio"] 
+{
+  display: none;
+}
+
+.rating label 
+{
+  font-size: 2rem;
+  color: #ccc;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.rating input[type="radio"]:checked + label 
+{
+  color: #ffcc00;
+}
+
+.rating input[type="radio"]:checked ~ label 
+{
+  color: #ffcc00;
+}
+
+.rating input[type="radio"]:hover + label,
+
+.rating input[type="radio"]:focus + label 
+{
+  color: #ffcc00;
+}
+
+.rating input[type="radio"]:hover ~ label,
+
+.rating input[type="radio"]:focus ~ label 
+{
+  color: #ffcc00;
+}
+
+/* END OF RATING CSS */
